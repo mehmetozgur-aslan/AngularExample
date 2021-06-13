@@ -20,19 +20,24 @@
 
 <div class="row">
 
-  <div class="col-md-4">
-<button igxButton="flat">Flat</button>
+  <div class="col-md-3">
+<button routerLink="home" igxButton="flat">Go to Home</button>
   </div>
 
-  <div class="col-md-4">
-    col2
+  <div class="col-md-3">
+    <button routerLink="user" igxButton="flat">Go to User</button>
+
   </div>
 
-  <div class="col-md-4">
-    col3
+  <div class="col-md-3">
+    <button [routerLink]="['user',5]" igxButton="flat">Go to User Detail 5</button>
+
   </div>
 
+  <div class="col-md-3">
+    <button routerLink="role" igxButton="flat">Go to Role</button>
 
+  </div>
 </div>
 
 <router-outlet></router-outlet>
