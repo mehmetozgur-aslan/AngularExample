@@ -21,7 +21,7 @@ import { IgxIconModule } from 'igniteui-angular';
     RoleComponent,
     NavbarComponent,
     SidebarComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
