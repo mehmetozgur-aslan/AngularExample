@@ -19,8 +19,12 @@ const routes: Routes = [
     loadChildren: () => import("./user/user.module").then(m => m.UserModule)
   },
   {
-    path: "data-binding",
-    loadChildren: () => import("./data-binding/data-binding.module").then(m => m.DataBindingModule)
+    path: "user",
+    loadChildren: () => import("./user/user.module").then(m => m.UserModule)
+  },
+  {
+    path: "storage",
+    loadChildren: () => import("./storage/storage.module").then(m => m.StorageModule)
   },
   {
     path: "**",
