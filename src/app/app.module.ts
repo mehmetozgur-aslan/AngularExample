@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { IgxNavbarModule } from 'igniteui-angular';
 import { IgxIconModule } from 'igniteui-angular';
+import { CookieService } from 'ngx-cookie-service';
 
 // import { ToastrModule } from 'ngx-toastr';
 // import { NgxSpinnerModule } from "ngx-spinner";
@@ -32,7 +33,7 @@ import { IgxIconModule } from 'igniteui-angular';
     IgxIconModule,
     IgxNavigationDrawerModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

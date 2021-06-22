@@ -4,7 +4,7 @@
 
         <div class="col-md-5">
             <input type="text" [(ngModel)]="name" />
-            
+
             <br />
 
             <button (click)="setItem(name)">set Item</button>
@@ -31,4 +31,11 @@
 
         </div>
     </div>
+
+    <div class="col-md-2">
+        <button [routerLink]="['../cookie']">Go To Cookie Page</button>
+
+
+    </div>
+
 </div>

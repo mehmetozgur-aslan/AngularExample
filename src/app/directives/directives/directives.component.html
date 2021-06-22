@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center">
+    <h2>Angular Directives</h2>
+</div>
+
+<h3>Structural Directives</h3>
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>*ngIf</h4>
+
+        <input type="text" [(ngModel)]="name" />
+        <p *ngIf="title">Title var...</p>
+        <p *ngIf="name==='Ahmet'">isim Ahmet..</p>
+        <button (click)="changeTitle()">toggle</button>
+        <br />
+        <div *ngIf="title; then titleExist; else titleNotExist"></div>
+        <ng-template #titleExist>Title Var Template</ng-template>
+        <ng-template #titleNotExist>Title Yok Template</ng-template>
+    </div>
+
+    <div class="col-md-4">
+        <h4>-ngSwitch</h4>
+        <input type="text" [(ngModel)]="username" />
+        <br />
+        <ul [ngSwitch]="username">
+            <li *ngSwitchCase="'Özgür'">Hello Özgür</li>
+            <li *ngSwitchCase="'Aslan'">Hello Aslan</li>
+            <li *ngSwitchDefault="'Ahmet'">Hello Everyone</li>
+        </ul>
+    </div>
+</div>
