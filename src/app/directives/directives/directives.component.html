@@ -28,4 +28,51 @@
             <li *ngSwitchDefault="'Ahmet'">Hello Everyone</li>
         </ul>
     </div>
+
+    <div class="col-md-4">
+        <h4>*ngFor</h4>
+
+        <ul>
+            <li *ngFor="let city of cities; let i = index"> {{i}} - Id: {{city.id}} - Name: {{city.name}} - Region :
+                {{city.region}}</li>
+        </ul>
+    </div>
+</div>
+
+
+<h3>Attribute Directives</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>[ngClass]</h4>
+        <input type="text" [(ngModel)]="color">
+        <p class="red">Renk</p>
+        <p [ngClass]="color">Renk</p>
+        <p [ngClass]="color==='red'?'red':'blue'">Renk</p>
+        <p [ngClass]="{
+            red:color==='red',
+            blue:color==='blue',
+        }">Renk</p>
+    </div>
+
+    <div class="col-md-6">
+        <h4>[ngStyle]</h4>
+        <input type="text" [(ngModel)]="color">
+        <p style="color: red;">Style Renk</p>
+        <p [ngStyle]="{color:color}">Style Renk</p>
+        <p [ngStyle]="{color:color==='red'?'red':'yellow'}">Style Renk</p>
+    </div>
+
+</div>
+
+<h3>Custom Directives</h3>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <p appHighlight>Highlight Directives Works!</p>
+
+        <p appHighlight>Highlight Directives Works!</p>
+    </div>
+
 </div>

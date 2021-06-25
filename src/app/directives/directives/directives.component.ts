@@ -11,6 +11,16 @@ export class DirectivesComponent implements OnInit {
   name = "";
   username = "";
 
+  cities = [
+    { id: 1, name: "İstanbul", region: "Marmara" },
+    { id: 3, name: "Ankara", region: "İç Anadolu" },
+    { id: 6, name: "İzmir", region: "Ege" },
+    { id: 9, name: "Manisa", region: "Ege" },
+    { id: 12, name: "Kars", region: "Doğu Anadolu" },
+  ]
+
+  color = "";
+
   constructor() { }
 
   ngOnInit() {

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DirectivesComponent } from './directives/directives.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from 'src/libs';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [DirectivesComponent],
+  declarations: [DirectivesComponent,HighlightDirective],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
